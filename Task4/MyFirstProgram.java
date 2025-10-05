@@ -4,9 +4,9 @@ class MyFirstClass {
         int i, j;
         for (i = 1; i <= 8; i++) {
             for(j = 1; j <= 8; j++) {
-                o.setFirstVal(i);            
-                o.setSecondVal(j);     
-                System.out.print(o.Metod());   
+                o.SetFirstNum(i);            
+                o.SetSecondNum(j);     
+                System.out.print(o.MetodMultiplication());   
                 System.out.print(" ");
             }
             System.out.println();
@@ -15,38 +15,38 @@ class MyFirstClass {
 }
 
 class MySecondClass {
-    // Два приватных поля типа int
-    private int firstNum;
-    private int secondNum;
+    // Два приватных поля типа int для хранения числовый значений
+    private int FirstNum;
+    private int SecondNum;
     
-    // Конструктор
-    public MySecondClass(int first, int second) {
-        this.firstNum = first;
-        this.secondNum = second;
+    // Конструктор - инициализирует поля класса переданными значениями
+    public MySecondClass(int First, int Second) {
+        this.FirstNum = First;
+        this.SecondNum = Second;
     }
     
-    // Метод для получения значения 1 поля
-    public int getFirstVal() {
-        return firstNum;
+    // Метод для получения значения 1 приватного поля, используется для чтения значений извне класса
+    public int GetFirstNum() {
+        return FirstNum;
     }
     
-    // Метод для модификации значения 1 поля
-    public void setFirstVal(int value) {
-        this.firstNum = value;
+    // Метод, использующийся для безопасного изменения значения 1 поля
+    public void SetFirstNum(int value) {
+        this.FirstNum = value;
     }
     
-    // Метод для получения значения 2 поля
-    public int getSecondVal() {
-        return secondNum;
+    // Метод для получения значения 2 приватного поля, используется для чтения значений извне класса
+    public int GetSecondNum() {
+        return SecondNum;
     }
     
-    // Метод для модификации значения 2 поля
-    public void setSecondVal(int value) {
-        this.secondNum = value;
+    // Метод, использующийся для безопасного изменения значения 2 поля
+    public void SetSecondNum(int value) {
+        this.SecondNum = value;
     }
     
-    // Метод реализующий умножение
-    public int Metod() {
-        return firstNum * secondNum;
+    // Метод реализующий умножение чисел
+    public int MetodMultiplication() {
+        return FirstNum * SecondNum;
     }
 }

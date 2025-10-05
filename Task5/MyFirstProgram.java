@@ -6,9 +6,9 @@ class MyFirstClass {
         int i, j;
         for (i = 1; i <= 8; i++) {
             for(j = 1; j <= 8; j++) {
-                o.setFirstVal(i);            
-                o.setSecondVal(j);     
-                System.out.print(o.Metod());   
+                o.SetFirstNum(i);            
+                o.SetSecondNum(j);     
+                System.out.print(o.MetodMultiplication());   
                 System.out.print(" ");
             }
             System.out.println();
